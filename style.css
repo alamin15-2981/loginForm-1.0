@@ -1,0 +1,106 @@
+/* 
+----------------
+Default css
+----------------
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: tahoma;
+    scroll-behavior: smooth;
+    background-image: url('images/xps-Qrjx2nTBHVo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+----------------
+Custom css
+----------------
+*/
+
+#loginBox {
+    width: 450px;
+    background-color: #000;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+#loginBox input {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 14px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#loginBox input[type="email"],
+#loginBox input[type="password"] {
+    background-color: #F3F2F3;
+}
+
+#loginBox input[type="submit"] {
+    background-color: #2094a6;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.login-text {
+    text-align: center;
+}
+
+.login-text span {
+    color: #c2b9b9;
+}
+
+.login-text a {
+    color: teal;
+}
+
+/* 
+----------------
+Responsive css
+----------------
+*/
+
+@media only screen and (max-width: 600px) {
+    #loginBox {
+        width: 250px;
+        padding: 20px;
+    }
+
+    #loginBox input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login-text span,
+    .login-text a {
+        font-size: 13px;
+    }
+}
